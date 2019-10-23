@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZoomPortalMonolith.Domain\ZoomPortalMonolith.Domain.csproj" />
+    <ProjectReference Include="..\ZoomPortalMonolith.Infrastructure\ZoomPortalMonolith.SharedKernal.Infrastructure.csproj" />
+    <ProjectReference Include="..\ZoomPortalMonolith.SharedKernal.Domain\ZoomPortalMonolith.SharedKernal.Domain.Foundation.csproj" />
+  </ItemGroup>
+
+</Project>

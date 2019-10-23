@@ -3,7 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoomPortalMonolith", "ZoomPortalMonolith\ZoomPortalMonolith.csproj", "{314E71C6-754A-4AC5-B479-1CF96F317E36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoomPortalMonolith.WebApp", "ZoomPortalMonolith\ZoomPortalMonolith.WebApp.csproj", "{314E71C6-754A-4AC5-B479-1CF96F317E36}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoomPortalMonolith.Domain", "ZoomPortalMonolith.Domain\ZoomPortalMonolith.Domain.csproj", "{0F357B50-589F-45F5-9887-C2B181FAAF3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedKernal", "SharedKernal", "{A6808B9B-62E6-4DC3-97D7-4C1D725C38F1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoomPortalMonolith.SharedKernal.Domain.Foundation", "ZoomPortalMonolith.SharedKernal.Domain\ZoomPortalMonolith.SharedKernal.Domain.Foundation.csproj", "{4BC36765-285F-4284-940E-14778B474BE3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoomPortalMonolith.SharedKernal.Infrastructure", "ZoomPortalMonolith.Infrastructure\ZoomPortalMonolith.SharedKernal.Infrastructure.csproj", "{737906FC-954F-4AB5-A4FA-A298173B8E79}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoomPortalMonolith.Infrastructure.EntityFramework", "ZoomPortalMonolith.Infrastructure.EntityFramework\ZoomPortalMonolith.Infrastructure.EntityFramework.csproj", "{EADC7328-4B06-4CD9-8395-23192D391A36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoomPortalMonolith.ViewModels", "ZoomPortalMonolith.ViewModels\ZoomPortalMonolith.ViewModels.csproj", "{E0BBC1F6-41AA-4074-8EEC-D4DE3089BA21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{74FAFAEF-8F24-47B0-803B-D5BEF2D2D178}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +32,33 @@ Global
 		{314E71C6-754A-4AC5-B479-1CF96F317E36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{314E71C6-754A-4AC5-B479-1CF96F317E36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{314E71C6-754A-4AC5-B479-1CF96F317E36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F357B50-589F-45F5-9887-C2B181FAAF3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F357B50-589F-45F5-9887-C2B181FAAF3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F357B50-589F-45F5-9887-C2B181FAAF3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F357B50-589F-45F5-9887-C2B181FAAF3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BC36765-285F-4284-940E-14778B474BE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BC36765-285F-4284-940E-14778B474BE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BC36765-285F-4284-940E-14778B474BE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BC36765-285F-4284-940E-14778B474BE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{737906FC-954F-4AB5-A4FA-A298173B8E79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{737906FC-954F-4AB5-A4FA-A298173B8E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{737906FC-954F-4AB5-A4FA-A298173B8E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{737906FC-954F-4AB5-A4FA-A298173B8E79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EADC7328-4B06-4CD9-8395-23192D391A36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EADC7328-4B06-4CD9-8395-23192D391A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EADC7328-4B06-4CD9-8395-23192D391A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EADC7328-4B06-4CD9-8395-23192D391A36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0BBC1F6-41AA-4074-8EEC-D4DE3089BA21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0BBC1F6-41AA-4074-8EEC-D4DE3089BA21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0BBC1F6-41AA-4074-8EEC-D4DE3089BA21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0BBC1F6-41AA-4074-8EEC-D4DE3089BA21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4BC36765-285F-4284-940E-14778B474BE3} = {A6808B9B-62E6-4DC3-97D7-4C1D725C38F1}
+		{737906FC-954F-4AB5-A4FA-A298173B8E79} = {A6808B9B-62E6-4DC3-97D7-4C1D725C38F1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {016FDEA2-40DF-4C4F-AFA1-C3876AAC7917}
