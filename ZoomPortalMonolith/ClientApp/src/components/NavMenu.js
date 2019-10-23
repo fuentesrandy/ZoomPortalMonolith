@@ -18,18 +18,8 @@ export default props => (
           <NavItem>
             <Glyphicon glyph='home' /> Home
           </NavItem>
-        </LinkContainer>
-        <LinkContainer to={'/counter'}>
-          <NavItem>
-            <Glyphicon glyph='education' /> Counter
-          </NavItem>
-        </LinkContainer>
-        <LinkContainer to={'/fetchdata'}>
-          <NavItem>
-            <Glyphicon glyph='th-list' /> Fetch data
-          </NavItem>
-        </LinkContainer>
-      </Nav>
+        </LinkContainer> 
+    </Nav>
     </Navbar.Collapse>
   </Navbar>
 );
