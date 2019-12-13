@@ -28,6 +28,7 @@ namespace ZoomPortalMonolith.Infrastructure.EntityFramework.Context
         {
             base.OnModelCreating(modelBuilder);
 
+            //modelBuilder.HasDefaultSchema("public");
 
             modelBuilder.ApplyConfiguration(new CustomerMap());
             modelBuilder.ApplyConfiguration(new ProjectMap());

@@ -45,12 +45,12 @@ namespace ZoomPortalMonolith.WebApp
                 });
             }
 
-            #endregion  
+            #endregion
 
 
-            var domainContextConnectionString = Configuration.GetConnectionString("DomainContext");
+            var domainContextConnectionString = Configuration["DomainContext"];
             services.AddDbContext<DomainUnitOfWork>(options =>
-                options.UseSqlServer(domainContextConnectionString));
+                options.UseNpgsql(domainContextConnectionString));
 
 
             services.AddScoped<IDomainUnitOfWork>(provider => provider.GetService<DomainUnitOfWork>());
