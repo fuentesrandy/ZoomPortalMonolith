@@ -29,7 +29,7 @@ namespace ZoomPortalMonolith.Infrastructure.EntityFramework.Repositories
         public virtual Task<TEntity> GetAsync(TId id)
         {
             var entity = DbSet.Local.FirstOrDefault(x => x.Id.Equals(id));
-            return entity != null ? Task.FromResult(entity) : DbSet.FindAsync(id);
+            return entity != null ? Task.FromResult(entity) : DbSet.FindAsync(id).AsTask();
         }
 
         public virtual IEnumerable<TEntity> All()

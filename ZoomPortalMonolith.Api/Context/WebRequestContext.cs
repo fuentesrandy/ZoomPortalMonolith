@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using ZoomPortalMonolith.SharedKernal.Infrastructure;
 
-namespace ZoomPortalMonolith.WebApp.Context
+namespace ZoomPortalMonolith.Api.Context
 {
     public class WebRequestContext : IRequestContext
     {

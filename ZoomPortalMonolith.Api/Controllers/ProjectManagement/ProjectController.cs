@@ -9,7 +9,7 @@ using ZoomPortalMonolith.Domain.ProjectManagement.Entities;
 using ZoomPortalMonolith.Infrastructure.EntityFramework.Context;
 using ZoomPortalMonolith.ViewModels.ProjectManagement;
 
-namespace ZoomPortalMonolith.WebApp.Controllers.ProjectManagement
+namespace ZoomPortalMonolith.Api.Controllers.ProjectManagement
 {
     [Route("api/[controller]")]
     [ApiController]

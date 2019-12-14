@@ -8,7 +8,7 @@ using ZoomPortalMonolith.Domain.CustomerManagement.Entities;
 using ZoomPortalMonolith.Infrastructure.EntityFramework.Context;
 using ZoomPortalMonolith.ViewModels.CustomerManagement;
 
-namespace ZoomPortalMonolith.WebApp.Controllers.CustomerManagement
+namespace ZoomPortalMonolith.Api.Controllers.CustomerManagement
 {
     [Route("api/[controller]")]
     [ApiController]

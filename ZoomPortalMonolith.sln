@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.852
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoomPortalMonolith.WebApp", "ZoomPortalMonolith\ZoomPortalMonolith.WebApp.csproj", "{314E71C6-754A-4AC5-B479-1CF96F317E36}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoomPortalMonolith.Domain", "ZoomPortalMonolith.Domain\ZoomPortalMonolith.Domain.csproj", "{0F357B50-589F-45F5-9887-C2B181FAAF3E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedKernal", "SharedKernal", "{A6808B9B-62E6-4DC3-97D7-4C1D725C38F1}"
@@ -15,12 +13,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoomPortalMonolith.SharedKe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoomPortalMonolith.Infrastructure.EntityFramework", "ZoomPortalMonolith.Infrastructure.EntityFramework\ZoomPortalMonolith.Infrastructure.EntityFramework.csproj", "{EADC7328-4B06-4CD9-8395-23192D391A36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoomPortalMonolith.ViewModels", "ZoomPortalMonolith.ViewModels\ZoomPortalMonolith.ViewModels.csproj", "{E0BBC1F6-41AA-4074-8EEC-D4DE3089BA21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZoomPortalMonolith.ViewModels", "ZoomPortalMonolith.ViewModels\ZoomPortalMonolith.ViewModels.csproj", "{E0BBC1F6-41AA-4074-8EEC-D4DE3089BA21}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{74FAFAEF-8F24-47B0-803B-D5BEF2D2D178}"
 	ProjectSection(SolutionItems) = preProject
+		Docker-Cmds.txt = Docker-Cmds.txt
 		README.md = README.md
+		ZoomPortalMonolith-Api-Build.Dockerfile = ZoomPortalMonolith-Api-Build.Dockerfile
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoomPortalMonolith.Api", "ZoomPortalMonolith.Api\ZoomPortalMonolith.Api.csproj", "{7597EF2D-D51D-43C3-BB75-2547D65C457C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,10 +30,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{314E71C6-754A-4AC5-B479-1CF96F317E36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{314E71C6-754A-4AC5-B479-1CF96F317E36}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{314E71C6-754A-4AC5-B479-1CF96F317E36}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{314E71C6-754A-4AC5-B479-1CF96F317E36}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0F357B50-589F-45F5-9887-C2B181FAAF3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0F357B50-589F-45F5-9887-C2B181FAAF3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F357B50-589F-45F5-9887-C2B181FAAF3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -52,6 +50,10 @@ Global
 		{E0BBC1F6-41AA-4074-8EEC-D4DE3089BA21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0BBC1F6-41AA-4074-8EEC-D4DE3089BA21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0BBC1F6-41AA-4074-8EEC-D4DE3089BA21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7597EF2D-D51D-43C3-BB75-2547D65C457C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7597EF2D-D51D-43C3-BB75-2547D65C457C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7597EF2D-D51D-43C3-BB75-2547D65C457C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7597EF2D-D51D-43C3-BB75-2547D65C457C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

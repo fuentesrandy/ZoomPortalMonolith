@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using ZoomPortalMonolith.ViewModels;
 
-namespace ZoomPortalMonolith.WebApp.Middleware
+namespace ZoomPortalMonolith.Api.Middleware
 {
     public class ExceptionMiddleware
     {

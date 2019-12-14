@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.AzureKeyVault" Version="3.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.10" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZoomPortalMonolith.Domain\ZoomPortalMonolith.Domain.csproj" />
+    <ProjectReference Include="..\ZoomPortalMonolith.Infrastructure.EntityFramework\ZoomPortalMonolith.Infrastructure.EntityFramework.csproj" />
+    <ProjectReference Include="..\ZoomPortalMonolith.ViewModels\ZoomPortalMonolith.ViewModels.csproj" />
+  </ItemGroup>
+
+
+</Project>

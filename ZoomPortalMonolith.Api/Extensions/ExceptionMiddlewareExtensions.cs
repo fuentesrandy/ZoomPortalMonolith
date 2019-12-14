@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
-using ZoomPortalMonolith.WebApp.Middleware;
+using ZoomPortalMonolith.Api.Middleware;
 
-namespace ZoomPortalMonolith.WebApp.Extensions
+namespace ZoomPortalMonolith.Api.Extensions
 {
     public static class ExceptionMiddlewareExtensions
     {
